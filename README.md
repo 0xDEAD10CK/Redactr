@@ -22,13 +22,13 @@ This project is ideal for small businesses, ethical startups, or any organizatio
 ## 📁 Project Structure
 
 Redactr/  
-├── app.py # Main Flask app
-├── templates/
-│ └── apply.html
-├── uploads/
-├── instance/
-│ └── config.py
-├── requirements.txt
+├── app.py  
+├── templates/  
+│ └── apply.html  
+├── uploads/  
+├── instance/  
+│ └── config.py  
+├── requirements.txt  
 
 ## 🛡 Security Considerations
 
