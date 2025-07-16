@@ -1,19 +1,25 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.orm import DeclarativeBase
+from datetime import datetime
 
 app = Flask(__name__)
-app.config.from_pyfile("config.py")
-db = SQLAlchemy(app)
+# app.config.from_pyfile("config.py") #For when Config is setup
+
+class Base(DeclarativeBase):
+	pass
+
+db = SQLAlchemy(model_class=Base)
 
 # --- Models ---
 class Applicant(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	full_name = db.Column(db.String(120))
 	email = db.Column(db.String(120))
-	phone = db.Column(db.string(20))
+	phone = db.Column(db.String(20))
 	resume_filename = db.Column(db.String(200))
 	photo_filename = db.Column(db.String(200))
-	created_at = db.Column(db.DateTime, default=datetime.utcnow)
+	created_at = db.Column(db.DateTime, default=datetime.now())
 
 
 @app.route('/')
