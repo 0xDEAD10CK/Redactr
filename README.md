@@ -10,27 +10,38 @@ A privacy-focused, web-based hiring tool that enables anonymous resume/CV screen
 - Simple recruiter dashboard and applicant form.
 - Built with Python, Flask and SQLite (PostgreSQL-ready)
 
-## Use Case
+## 🚀 Features
 
 This project is ideal for small businesses, ethical startups, or any organization aiming to reduce hiring bias and improve fairness in early-stage candidate screening.
 
-## Tech Stack
+## 📦 Tech Stack
 
 - Python + Flask
 - SQLAlchemy
 
-## Project Structure
+## 📁 Project Structure
 
 Redactr/  
-|-->app.py  
-|-->templates/  
-|-------|-->apply.html  
-|-->uploads/  
-|-->instance/  
-|-->requirements.txt  
-|-->README.md  
+├── app.py # Main Flask app
+├── templates/
+│ └── apply.html
+├── uploads/
+├── instance/
+│ └── config.py
+├── requirements.txt
 
-## Security Considerations
+## 🛡 Security Considerations
 
-To be finalized.
+- Resume/photo uploads use sanitized filenames
+- Email/phone/name redaction logic (WIP in redactor module)
+- Recruiter view is intentionally blind to prevent early bias
+- Admin access can be protected with Flask-Login or basic auth
 
+## 🛠 Roadmap
+
+- ✅ Applicant resume submission
+- ✅ Resume redaction module
+- ⬜ Recruiter dashboard
+- ⬜ Role-based login
+- ⬜ Export to CSV
+- ⬜ ATS API integration
