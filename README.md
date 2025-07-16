@@ -22,12 +22,13 @@ This project is ideal for small businesses, ethical startups, or any organizatio
 ## Project Structure
 
 Redactr/  
-	app.py  
-	templates/  
-	uploads/  
-	instance/  
-	requirements.txt  
-	README.md  
+|-->app.py  
+|-->templates/
+|-------|-->apply.html 
+|-->uploads/  
+|-->instance/  
+|-->requirements.txt  
+|-->README.md  
 
 ## Security Considerations
 
