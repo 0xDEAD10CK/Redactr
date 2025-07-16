@@ -23,8 +23,8 @@ This project is ideal for small businesses, ethical startups, or any organizatio
 
 Redactr/  
 |-->app.py  
-|-->templates/
-|-------|-->apply.html 
+|-->templates/  
+|-------|-->apply.html  
 |-->uploads/  
 |-->instance/  
 |-->requirements.txt  
